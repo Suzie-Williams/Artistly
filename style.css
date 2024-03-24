@@ -1,0 +1,46 @@
+:root{
+	--white: #ffffff;
+	--light-gray: #efefef;
+	--medium-gray: #474747;
+	--dark-gray: #171717;
+	--off-white: #fffdfa;
+	--blue: #05a5c1;
+	--dark-blue: #00739c;
+	--orange: #fd7423;
+	-dark-orange: #e66215;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+	text-decoration: none;
+	color: var(--dark-gray);
+}
+
+
+body{
+	background-color: var(--off-white);
+}
+
+/*Header for all pages*/
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px 36px;
+}
+
+nav .artistly-logo{
+
+}
+
+nav .nav-ctn .nav-links{
+	padding-left: 72px;
+}
+
+nav .nav-ctn .nav-links:hover{
+	color: var(--blue);
+}
