@@ -36,7 +36,7 @@ nav{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 18px 36px;
+	padding: 15px 36px;
 	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
 }
 
@@ -45,7 +45,7 @@ nav .artistly-logo img{
 }
 
 nav .nav-ctn .nav-links{
-	padding-left: 72px;
+	margin-left: 72px;
 	font-weight: 600;
 }
 
@@ -66,7 +66,7 @@ header .artistly-banner{
 main{
 	width: 70%;
 	margin: 0 auto;
-	padding: 40px 0;
+	padding: 100px 0;
 }
 
 main h1{
@@ -188,4 +188,60 @@ footer div p i{
 	margin-top: 40px;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+/*Explore page*/
+
+#explore-main .gallery-section{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#explore-main .gallery-section .gallery-column{
+	display: flex;
+	flex-direction: column;
+	width: 32.5%;
+}
+
+#explore-main .gallery-section .gallery-column img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#explore-main a{
+	position: relative;
+	display: inline-block;
+	padding: 10px 30px;
+	margin-top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/*Contact Us page*/
+
+#contact_us-main .contact_us-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 45%;
+	margin: 40px auto;
+}
+
+#contact_us-main .contact_us-form .contact_us-items{
+	margin: 5px 0px 20px 0px;
+	padding: 7px;
+}
+
+#contact_us-main .contact_us-form textarea{
+	height: 200px;
+}
+
+#contact_us-main .contact_us-form button{
+	width: 25%;
+	padding: 10px 30px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	border: none;
 }
