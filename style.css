@@ -7,7 +7,8 @@
 	--blue: #05a5c1;
 	--dark-blue: #00739c;
 	--orange: #fd7423;
-	-dark-orange: #e66215;
+	--dark-orange: #e66215;
+	--light shadow:;
 }
 
 *{
@@ -19,28 +20,172 @@
 	color: var(--dark-gray);
 }
 
-
 body{
 	background-color: var(--off-white);
 }
 
+/* --------COMMON ELEMENTS--------*/
+
 /*Header for all pages*/
+
+header{
+	text-align: center;
+}
 nav{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	padding: 18px 36px;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
 }
 
-nav .artistly-logo{
-
+nav .artistly-logo img{
+	width: 150px;
 }
 
 nav .nav-ctn .nav-links{
 	padding-left: 72px;
+	font-weight: 600;
 }
 
 nav .nav-ctn .nav-links:hover{
 	color: var(--blue);
+}
+
+nav .nav-ctn .nav-links.active{
+	color: var(--blue);
+}
+
+header .artistly-banner{
+	width: 80%;
+	max-width: 1920px;
+}
+
+/*Main Section*/
+main{
+	width: 70%;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+main h1{
+	text-align: center;
+}
+/* Section*/
+
+section{
+	margin-top: 60px;
+}
+
+
+/*Footer*/
+footer{
+	width: 100%;
+	padding: 50px 150px;
+	background-color: var(--medium-gray);
+
+	display: flex;
+}
+
+footer>p{
+	color: var(--white);
+	font-size: 24px;
+	font-weight: 700;
+}
+
+footer div{
+	margin-left: 100px;
+}
+
+footer div p:first-child{
+	margin-bottom: 5px;
+}
+
+footer div p{
+	color: var(--off-white);
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+footer div p i{
+	color: var(--off-white);
+	margin-right: 5px;
+}
+
+.link-btn{
+	background-color: var(--blue);
+	color: #ffffff;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.link-btn:hover{
+	background-color: var(--dark-blue);
+	font-weight: 600;
+}
+
+.action-btn{
+	background-color: var(--orange);
+	color: #ffffff;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn:hover{
+	background-color: var(--dark-orange);
+	font-weight: 600;
+}
+
+/* --------SPECIFIC ELEMENTS--------*/
+
+/*Home Page*/
+
+#home-main{
+	text-align: center;
+}
+
+#home-main .description{
+	margin-top: 20px;
+}
+
+#quiz_links-section #quiz_links-ctn{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-top: 40px;
+}
+
+#quiz_links-section #quiz_links-ctn .quiz-links{
+	padding: 40px 40px;
+	margin: 30px 20px;
+	background-color: var(--blue);
+	color: #ffffff;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#quiz_links-section #quiz_links-ctn .quiz-links:hover{
+	
+}
+
+/*Learn page*/
+
+#learn-main{
+
+}
+
+#learn-main dl{
+	margin-top: 60px;
+}
+
+#learn-main dl dt{
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+#learn-main a{
+	position: relative;
+	display: inline-block;
+	padding: 10px 30px;
+	margin-top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
 }
