@@ -114,6 +114,14 @@ footer div p i{
 	margin-right: 5px;
 }
 
+button{
+	border: none;
+}
+
+.regsize-btn{
+	padding: 10px 30px;
+}
+
 .link-btn{
 	background-color: var(--blue);
 	color: #ffffff;
@@ -184,7 +192,6 @@ footer div p i{
 #learn-main a{
 	position: relative;
 	display: inline-block;
-	padding: 10px 30px;
 	margin-top: 40px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -212,7 +219,6 @@ footer div p i{
 #explore-main a{
 	position: relative;
 	display: inline-block;
-	padding: 10px 30px;
 	margin-top: 40px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -239,9 +245,24 @@ footer div p i{
 
 #contact_us-main .contact_us-form button{
 	width: 25%;
-	padding: 10px 30px;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
 	border: none;
+}
+
+.quiz-section{
+	display: none;
+}
+
+.quiz-section:first-child{
+	display: inline-block;
+}
+
+.quiz-section label{
+	display: block;
+}
+
+.quiz-section img{
+	width: 70%;
 }
