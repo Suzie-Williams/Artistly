@@ -259,10 +259,15 @@ button{
 	display: inline-block;
 }
 
-.quiz-section label{
+.quiz-section label, .next-btn{
 	display: block;
 }
 
 .quiz-section img{
-	width: 70%;
+	max-width: 70%;
+	max-height: 600px;
+}
+
+.quiz-section button{
+	margin-top: 40px;
 }

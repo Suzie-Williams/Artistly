@@ -5,54 +5,60 @@
 	<meta name="author" content="Suzie Williams">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Principles of design in Art page">
-	<meta name="keywords" content="art, gallery">
+	<meta name="keywords" content="art, quiz, artistly,movement">
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<title>Explore Gallery- Artistly</title>
+	<title>Movement Quiz- Artistly</title>
 </head>
 <body>
 	<header class="artistly-header">
 		<nav class="artistly-nav">
-			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt="">
+			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt=""></a>
 			<div class="nav-ctn">
 				<a href="index.html" class="nav-links">Home</a>
 				<a href="learn.html" class="nav-links">Learn</a>
-				<a href="explore.html" class="nav-links active">Explore</a>
+				<a href="explore.html" class="nav-links">Explore</a>
 				<a href="contact_us.html" class="nav-links">Contact Us</a>
 			</div>
 		</nav>
 		<img src="imgs/banner.jpg" class="artistly-banner">
 	</header>
-	<main id="explore-main">
-		<h1>Explore Masterpiece using the Principles of Design in Art</h1>
-		<section class="gallery-section">
-			<div class="gallery-column">
-				<img src="imgs\gallery_photo-1.jpg" alt="">
-				<img src="imgs\gallery_photo-2.jpeg" alt="">
-				<img src="imgs\gallery_photo-3.jpeg" alt="">
-				<img src="imgs\gallery_photo-4.jpg" alt="">
-				<img src="imgs\gallery_photo-5.jpg" alt="">
-			</div>
-			<div class="gallery-column">
-				<img src="imgs\gallery_photo-6.jpg" alt="">
-				<img src="imgs\gallery_photo-7.jpg" alt="">
-				<img src="imgs\gallery_photo-8.jpg" alt="">
-				<img src="imgs\gallery_photo-9.jpg" alt="">
-				<img src="imgs\gallery_photo-10.jpg" alt="">
-			</div>
-			<div class="gallery-column">
-				<img src="imgs\gallery_photo-11.jpg" alt="">
-				<img src="imgs\gallery_photo-12.jpg" alt="">
-				<img src="imgs\gallery_photo-13.jpeg" alt="">
-				<img src="imgs\gallery_photo-14.jpg" alt="">
-				<img src="imgs\gallery_photo-15.jpg" alt="">
-			</div>
+
+	<main id="quiz-main">
+		<section class="quiz-section">
+			<h2 class="quiz-question">1. Does this picture make use of movement techniques?</h2>
+			<img src="imgs/movement-q1.jpg" alt="">
+
+			<label for="q1-option1"><input type="radio" name="question1" id="q1-option1" class="quiz-options correct">
+			Yes</label>
+
+			<label for="q1-option2"><input type="radio" name="question1" id="q1-option2" class="quiz-options">
+			No</label>
+
+			<button class="next-btn action-btn regsize-btn">Next</button>
 		</section>
-		<a href="#explore-main" class="link-btn regsize-btn">Go to Top</a>
+
+		<section class="quiz-section">
+			<h2 class="quiz-question">2. Which one of these images causes less movement of attention?</h2>
+
+			<label for="q2-option1"><input type="radio" name="question2" id="q2-option1" class="quiz-options">
+			<img src="imgs/movement-q2-opt1.jpg" alt=""></label>
+
+			<label for="q2-option2"><input type="radio" name="question2" id="q2-option2" class="quiz-options correct">
+			<img src="imgs/movement-q2-opt2.jpg" alt=""></label>
+
+			<button class="next-btn action-btn regsize-btn">Next</button>
+		</section>
+
+		<section class="quiz-section">
+			<h2 id="results">yout</h2>
+			<!--<img src="" alt="" id="perfect">-->
+		</section>
 	</main>
+
 	<footer class="artistly-footer">
 		<p class="footer-items">Artistly</p>
 		<div class="footer-location-ctn footer-items">
@@ -67,4 +73,6 @@
 			<p><i class="fa-solid fa-phone"></i>1 758 777 8888</p>
 		</div>
 	</footer>
+	<script type="text/javascript" src="quiz.js"></script>
 </body>
+</html>
