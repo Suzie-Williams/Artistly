@@ -19,7 +19,7 @@ function nextSection(){
 			}
 		}
 	}
-	//quizSection[currentSection].style.display = "none";
+	quizSection[currentSection].style.display = "none";
 	currentSection++;
 	quizSection[currentSection].style.display = "inline-block";
 	results.innerHTML = `Your score is ${score} / ${nextBtns.length}`;
