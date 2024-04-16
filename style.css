@@ -263,10 +263,15 @@ button{
 	display: block;
 }
 
+.quiz-section .quiz-question, label{
+	margin-bottom: 30px;
+}
+
 .quiz-section img{
 	max-width: 70%;
 	max-height: 600px;
 }
+
 
 .quiz-section button{
 	margin-top: 40px;
