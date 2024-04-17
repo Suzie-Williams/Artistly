@@ -16,7 +16,7 @@
 <body>
 	<header class="artistly-header">
 		<nav class="artistly-nav">
-			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt="">
+			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt=""></a>
 			<div class="nav-ctn">
 				<a href="index.html" class="nav-links">Home</a>
 				<a href="learn.html" class="nav-links">Learn</a>
@@ -28,27 +28,34 @@
 	</header>
 	<main id="explore-main">
 		<h1>Explore Masterpiece using the Principles of Design in Art</h1>
+
+		<div id="modal-overlay"></div>
+		<div id="modal-cnt">
+			<img src="imgs\gallery_photo-1.jpg" alt="" id="modal-img">
+			<button id="modal_close-btn" onclick="closeModal()"><i class="fa-solid fa-x"></i></button>
+		</div>
+
 		<section class="gallery-section">
 			<div class="gallery-column">
-				<img src="imgs\gallery_photo-1.jpg" alt="">
-				<img src="imgs\gallery_photo-2.jpeg" alt="">
-				<img src="imgs\gallery_photo-3.jpeg" alt="">
-				<img src="imgs\gallery_photo-4.jpg" alt="">
-				<img src="imgs\gallery_photo-5.jpg" alt="">
+				<img src="imgs\gallery_photo-1.jpg" alt="" onclick="openModal('imgs/gallery_photo-1.jpg')">
+				<img src="imgs\gallery_photo-2.jpeg" alt="" onclick="openModal('imgs/gallery_photo-2.jpeg')">
+				<img src="imgs\gallery_photo-3.jpeg" alt="" onclick="openModal('imgs/gallery_photo-3.jpeg')">
+				<img src="imgs\gallery_photo-4.jpg" alt="" onclick="openModal('imgs/gallery_photo-4.jpg')">
+				<img src="imgs\gallery_photo-5.jpg" alt="" onclick="openModal('imgs/gallery_photo-5.jpg')">
 			</div>
 			<div class="gallery-column">
-				<img src="imgs\gallery_photo-6.jpg" alt="">
-				<img src="imgs\gallery_photo-7.jpg" alt="">
-				<img src="imgs\gallery_photo-8.jpg" alt="">
-				<img src="imgs\gallery_photo-9.jpg" alt="">
-				<img src="imgs\gallery_photo-10.jpg" alt="">
+				<img src="imgs\gallery_photo-6.jpg" alt="" onclick="openModal('imgs/gallery_photo-6.jpg')">
+				<img src="imgs\gallery_photo-7.jpg" alt="" onclick="openModal('imgs/gallery_photo-7.jpg')">
+				<img src="imgs\gallery_photo-8.jpg" alt="" onclick="openModal('imgs/gallery_photo-8.jpg')">
+				<img src="imgs\gallery_photo-9.jpg" alt="" onclick="openModal('imgs/gallery_photo-9.jpg')">
+				<img src="imgs\gallery_photo-10.jpg" alt="" onclick="openModal('imgs/gallery_photo-10.jpg')">
 			</div>
 			<div class="gallery-column">
-				<img src="imgs\gallery_photo-11.jpg" alt="">
-				<img src="imgs\gallery_photo-12.jpg" alt="">
-				<img src="imgs\gallery_photo-13.jpeg" alt="">
-				<img src="imgs\gallery_photo-14.jpg" alt="">
-				<img src="imgs\gallery_photo-15.jpg" alt="">
+				<img src="imgs\gallery_photo-11.jpg" alt="" onclick="openModal('imgs/gallery_photo-11.jpg')">
+				<img src="imgs\gallery_photo-12.jpg" alt="" onclick="openModal('imgs/gallery_photo-12.jpg')">
+				<img src="imgs\gallery_photo-13.jpeg" alt="" onclick="openModal('imgs/gallery_photo-13.jpeg')">
+				<img src="imgs\gallery_photo-14.jpg" alt="" onclick="openModal('imgs/gallery_photo-14.jpg')">
+				<img src="imgs\gallery_photo-15.jpg" alt="" onclick="openModal('imgs/gallery_photo-15.jpg')">
 			</div>
 		</section>
 		<a href="#explore-main" class="link-btn regsize-btn">Go to Top</a>
@@ -68,3 +75,6 @@
 		</div>
 	</footer>
 </body>
+
+<script type="text/javascript" src="modal.js"></script>
+</html>

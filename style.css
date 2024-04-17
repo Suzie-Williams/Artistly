@@ -3,6 +3,7 @@
 	--light-gray: #efefef;
 	--medium-gray: #474747;
 	--dark-gray: #171717;
+	--darkmode-gray: #1c1c1c;
 	--off-white: #fffdfa;
 	--blue: #05a5c1;
 	--dark-blue: #00739c;
@@ -75,7 +76,7 @@ main h1{
 /* Section*/
 
 section{
-	margin-top: 60px;
+	padding-top: 60px;
 }
 
 
@@ -174,11 +175,10 @@ button{
 	
 }
 
+
+
 /*Learn page*/
 
-#learn-main{
-
-}
 
 #learn-main dl{
 	margin-top: 60px;
@@ -197,7 +197,59 @@ button{
 	transform: translateX(-50%);
 }
 
+
+
+
 /*Explore page*/
+
+#explore-main #modal-overlay{
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	z-index: 99;
+}
+
+#explore-main #modal-cnt{
+	display: none;
+	width: 1000px;
+	height: 600px;
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+}
+
+#explore-main #modal-cnt #modal-img{
+	height: 100%;
+	max-width: 100%;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+}
+
+#explore-main #modal-cnt #modal_close-btn{
+	position: fixed;
+	right: 5px;
+	top: 0px;
+	padding: 8px;
+	background-color: transparent;
+}
+
+#explore-main #modal-cnt #modal_close-btn:hover{
+	cursor: pointer;
+}
+
+#explore-main #modal-cnt #modal_close-btn i{
+	font-weight: 700;
+	color: var(--white);
+}
+
 
 #explore-main .gallery-section{
 	display: flex;
@@ -214,6 +266,12 @@ button{
 #explore-main .gallery-section .gallery-column img{
 	width: 100%;
 	margin-bottom: 10px;
+	transition: transform 0.1s linear;
+}
+
+#explore-main .gallery-section .gallery-column img:hover{
+	cursor: pointer;
+	transform: scale(1.01);
 }
 
 #explore-main a{
@@ -223,6 +281,9 @@ button{
 	left: 50%;
 	transform: translateX(-50%);
 }
+
+
+
 
 /*Contact Us page*/
 
