@@ -1,3 +1,7 @@
+/*STYLE SHEET FOR ENTIRE WEBSITE*/
+
+
+/*--------Declaring style variables--------*/
 :root{
 	--white: #ffffff;
 	--light-gray: #efefef;
@@ -12,6 +16,7 @@
 	--light shadow:;
 }
 
+/*--------Setting new default values for all elements--------*/
 *{
 	margin: 0;
 	padding: 0;
@@ -31,6 +36,7 @@ body{
 
 header{
 	text-align: center;
+	max-width: 100%;
 }
 nav{
 	display: flex;
@@ -63,7 +69,7 @@ header .artistly-banner{
 	max-width: 1920px;
 }
 
-/*Main Section*/
+/*Main Section for all pages*/
 main{
 	width: 70%;
 	margin: 0 auto;
@@ -80,12 +86,11 @@ section{
 }
 
 
-/*Footer*/
+/*Footer for all pages*/
 footer{
-	width: 100%;
+	max-width: 100%;
 	padding: 50px 150px;
 	background-color: var(--medium-gray);
-
 	display: flex;
 }
 
@@ -119,6 +124,7 @@ button{
 	border: none;
 }
 
+/*Common elements*/
 .regsize-btn{
 	padding: 10px 30px;
 }
@@ -171,14 +177,9 @@ button{
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#quiz_links-section #quiz_links-ctn .quiz-links:hover{
-	
-}
-
 
 
 /*Learn page*/
-
 
 #learn-main dl{
 	margin-top: 60px;
@@ -196,7 +197,6 @@ button{
 	left: 50%;
 	transform: translateX(-50%);
 }
-
 
 
 
@@ -249,7 +249,6 @@ button{
 	font-weight: 700;
 	color: var(--white);
 }
-
 
 #explore-main .gallery-section{
 	display: flex;
@@ -312,6 +311,8 @@ button{
 	border: none;
 }
 
+/*Quizzes*/
+
 .quiz-section{
 	display: none;
 }
@@ -337,3 +338,25 @@ button{
 .quiz-section button{
 	margin-top: 40px;
 }
+
+#results-cnt{
+	width: 100%;
+	text-align: center;
+}
+
+#results-cnt #perfect-results{
+	width: 300px;
+	display: none;
+}
+
+#results-cnt a{
+	display: inline-block;
+}
+
+#results-cnt #end-links{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 30px 0px;
+}
+

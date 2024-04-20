@@ -14,6 +14,7 @@
 	<title>Variety/Unity Quiz- Artistly</title>
 </head>
 <body>
+	<!-- Header -->
 	<header class="artistly-header">
 		<nav class="artistly-nav">
 			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt=""></a>
@@ -26,7 +27,8 @@
 		</nav>
 		<img src="imgs/banner.jpg" class="artistly-banner">
 	</header>
-
+	<!-- End of Header -->
+	<!-- Main Section -->
 	<main id="quiz-main">
 		<section class="quiz-section">
 			<h2 class="quiz-question">1. This piece is too:</h2>
@@ -59,12 +61,17 @@
 		</section>
 
 
-		<section class="quiz-section">
-			<h2 id="results">yout</h2>
-			<!--<img src="" alt="" id="perfect">-->
+		<section class="quiz-section" id="results-cnt">
+			<h2 id="results"></h2>
+			<img src="imgs/perfect-results.png" alt="" id="perfect-results">
+			<div id="end-links">
+				<a href="contrast.html" class="link-btn regsize-btn">Try Again</a>
+				<a href="index.html#quiz_links-section" class="action-btn regsize-btn">Another Quiz</a>
+			</div>
 		</section>
 	</main>
-
+	<!-- End of Main Section -->
+	<!-- Footer -->
 	<footer class="artistly-footer">
 		<p class="footer-items">Artistly</p>
 		<div class="footer-location-ctn footer-items">
@@ -79,6 +86,8 @@
 			<p><i class="fa-solid fa-phone"></i>1 758 777 8888</p>
 		</div>
 	</footer>
+	<!-- End of Footer -->
+	<!-- Quiz script inclusion -->
 	<script type="text/javascript" src="quiz.js"></script>
 </body>
 </html>

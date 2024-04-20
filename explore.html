@@ -14,9 +14,10 @@
 	<title>Explore Gallery- Artistly</title>
 </head>
 <body>
+	<!-- Header -->
 	<header class="artistly-header">
 		<nav class="artistly-nav">
-			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt=""></a>
+			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt="Artistly Logo"></a>
 			<div class="nav-ctn">
 				<a href="index.html" class="nav-links">Home</a>
 				<a href="learn.html" class="nav-links">Learn</a>
@@ -24,23 +25,28 @@
 				<a href="contact_us.html" class="nav-links">Contact Us</a>
 			</div>
 		</nav>
-		<img src="imgs/banner.jpg" class="artistly-banner">
+		<img src="imgs/banner.jpg" class="artistly-banner" alt="Banner of Artistly Website">
 	</header>
+	<!-- End of Header -->
+	<!-- Main Section -->
 	<main id="explore-main">
 		<h1>Explore Masterpiece using the Principles of Design in Art</h1>
 
+		<!-- Modal Section -->
 		<div id="modal-overlay"></div>
 		<div id="modal-cnt">
 			<img src="imgs\gallery_photo-1.jpg" alt="" id="modal-img">
 			<button id="modal_close-btn" onclick="closeModal()"><i class="fa-solid fa-x"></i></button>
 		</div>
+		<!-- End of Modal Section -->
 
+		<!-- Gallery Section -->
 		<section class="gallery-section">
 			<div class="gallery-column">
-				<img src="imgs\gallery_photo-1.jpg" alt="" onclick="openModal('imgs/gallery_photo-1.jpg')">
-				<img src="imgs\gallery_photo-2.jpeg" alt="" onclick="openModal('imgs/gallery_photo-2.jpeg')">
-				<img src="imgs\gallery_photo-3.jpeg" alt="" onclick="openModal('imgs/gallery_photo-3.jpeg')">
-				<img src="imgs\gallery_photo-4.jpg" alt="" onclick="openModal('imgs/gallery_photo-4.jpg')">
+				<img src="imgs\gallery_photo-1.jpg" alt="Woman carrying vase walking down the stairs of a block building." onclick="openModal('imgs/gallery_photo-1.jpg')">
+				<img src="imgs\gallery_photo-2.jpeg" alt="Old man in semi-lit room with a vibrant red cloth draped around this body. Resting on a table, with subjects positioned in the ccenter of the piece" onclick="openModal('imgs/gallery_photo-2.jpeg')">
+				<img src="imgs\gallery_photo-3.jpeg" alt="Tree with blue trunk and leaves, and orange roots. Foreground has a background with inversed colors to the foreground" onclick="openModal('imgs/gallery_photo-3.jpeg')">
+				<img src="imgs\gallery_photo-4.jpg" alt="Ships in the water" onclick="openModal('imgs/gallery_photo-4.jpg')">
 				<img src="imgs\gallery_photo-5.jpg" alt="" onclick="openModal('imgs/gallery_photo-5.jpg')">
 			</div>
 			<div class="gallery-column">
@@ -58,8 +64,11 @@
 				<img src="imgs\gallery_photo-15.jpg" alt="" onclick="openModal('imgs/gallery_photo-15.jpg')">
 			</div>
 		</section>
+		<!-- End of Gallery Section -->
 		<a href="#explore-main" class="link-btn regsize-btn">Go to Top</a>
 	</main>
+	<!-- End of Main Section -->
+	<!-- Footer -->
 	<footer class="artistly-footer">
 		<p class="footer-items">Artistly</p>
 		<div class="footer-location-ctn footer-items">
@@ -74,7 +83,9 @@
 			<p><i class="fa-solid fa-phone"></i>1 758 777 8888</p>
 		</div>
 	</footer>
+	<!-- End of Footer -->
 </body>
 
+<!-- Modal script inclusion -->
 <script type="text/javascript" src="modal.js"></script>
 </html>
