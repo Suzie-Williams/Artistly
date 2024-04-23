@@ -36,7 +36,6 @@ body{
 
 header{
 	text-align: center;
-	max-width: 100%;
 }
 nav{
 	display: flex;
@@ -88,7 +87,7 @@ section{
 
 /*Footer for all pages*/
 footer{
-	max-width: 100%;
+	width: 100%;
 	padding: 50px 150px;
 	background-color: var(--medium-gray);
 	display: flex;
@@ -301,7 +300,6 @@ button{
 
 #contact_us-main .contact_us-form textarea{
 	height: 200px;
-	resize: none;
 }
 
 #contact_us-main .contact_us-form button{

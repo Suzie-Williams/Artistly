@@ -11,6 +11,17 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+	   (function(){
+	      emailjs.init({
+	        publicKey: "oyYAncQCg68Na4sdp",
+	      });
+	   })();
+	</script>
+	<script src="sendEmail.js"></script>
 	<title>Contact Us- Artistly</title>
 </head>
 <body>
@@ -33,11 +44,11 @@
 		<h1>Share your thoughts with Artistly</h1>
 		<form class="contact_us-form">
 			<label for="contact_us-inp-name">Name:</label>
-			<input type="text" name="name" placeholder="Enter your name" id="contact_us-inp-name" class="contact_us-items">
+			<input type="text" name="name" placeholder="Enter your name" id="contact_us-inp-name" class="contact_us-items" required>
 			<label for="contact_us-inp-email">Email:</label>
-			<input type="email" name="email" placeholder="Enter your email address" id="contact_us-inp-email" class="contact_us-items">
-			<textarea placeholder="Enter your message..." class="contact_us-items"></textarea>
-			<button type="button" class="action-btn regsize-btn">Submit</button>
+			<input type="email" name="email" placeholder="Enter your email address" id="contact_us-inp-email" class="contact_us-items" required>
+			<textarea name="message" id="contact_us-message" placeholder="Enter your message..." class="contact_us-items" required></textarea>
+			<button type="button" onclick="sendMail()" class="action-btn regsize-btn">Submit</button>
 		</form>
 	</main>
 	<!-- End of Main Section -->
