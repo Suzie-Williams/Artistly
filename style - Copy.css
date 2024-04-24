@@ -51,22 +51,17 @@ nav .artistly-logo img{
 	width: 150px;
 }
 
-nav #nav-ctn .nav-links{
+nav .nav-ctn .nav-links{
 	margin-left: 72px;
 	font-weight: 600;
 }
 
-nav #nav-ctn .nav-links:hover{
+nav .nav-ctn .nav-links:hover{
 	color: var(--blue);
 }
 
-nav #nav-ctn .nav-links.active{
+nav .nav-ctn .nav-links.active{
 	color: var(--blue);
-}
-
-nav button{
-	display: none;
-	background-color: transparent;
 }
 
 header .artistly-banner{
@@ -299,12 +294,8 @@ button{
 	margin: 40px auto;
 }
 
-#contact_us-main .contact_us-form label{
-	margin-bottom: 5px;
-}
-
 #contact_us-main .contact_us-form .contact_us-items{
-	margin-bottom: 20px;
+	margin: 5px 0px 20px 0px;
 	padding: 7px;
 }
 
@@ -370,252 +361,3 @@ button{
 	margin: 30px 0px;
 }
 
-/* SMARTPHONE VIEW */
-
-@media only screen and (max-width:450px){
-nav{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-nav .nav-active{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-nav .nav-inactive{
-	display: none;
-}
-
-nav #nav-ctn .nav-links{
-	margin-left: 0px;
-}
-
-nav .btn-active{
-	display: block;
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-nav .btn-inactive{
-	display: none;
-}
-
-
-header .artistly-banner{
-	display: none;
-}
-
-main{
-	width: 80%;
-	margin: 0 auto;
-	padding: 70px 0;
-}
-
-footer{
-	display: flex;
-	flex-direction: column;
-	padding: 50px;
-}
-
-footer>p{
-	margin-bottom: 5px;
-}
-
-footer div{
-	margin-left: 0px;
-}
-
-#home-main .description{
-	margin-top: 40px;
-}
-
-#quiz_links-section #quiz_links-ctn{
-	display: grid;
-	grid-template-columns: auto;
-	margin-top: 40px;
-}
-
-#learn-main dl dt{
-	margin-top: 40px;
-	margin-bottom: 10px;
-}
-
-#learn-main a{
-	margin-top: 70px;
-}
-
-#explore-main #modal-cnt{
-	display: none;
-	width: 90%;
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 100;
-}
-
-#explore-main #modal-cnt #modal-img{
-	width: 100%;
-	height: auto;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
-}
-
-#explore-main .gallery-section{
-	display: flex;
-	flex-direction: column;
-}
-
-#explore-main .gallery-section .gallery-column{
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-}
-
-#contact_us-main .contact_us-form{
-	width: 100%;
-}
-
-#contact_us-main .contact_us-form button{
-	width: 50%;
-}
-
-.quiz-section img{
-	max-width: 100%;
-	max-height: 600px;
-}
-
-#results-cnt #perfect-results{
-	width: 250px;
-}
-
-#results-cnt a{
-	display: block;
-}
-
-#results-cnt a:first-child{
-	margin-bottom: 20px;
-}
-}
-
-/* TABLET VIEW */
-
-@media only screen and (min-width:451px) and (max-width:769px){
-
-nav{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-nav .nav-active{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-nav .nav-inactive{
-	display: none;
-}
-
-nav #nav-ctn .nav-links{
-	margin-left: 0px;
-}
-
-nav .btn-active{
-	display: block;
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-nav .btn-inactive{
-	display: none;
-}
-
-
-
-main{
-	width: 80%;
-	margin: 0 auto;
-	padding: 70px 0;
-}
-
-footer{
-	display: flex;
-	flex-direction: column;
-	padding: 50px;
-}
-
-footer>p{
-	margin-bottom: 5px;
-}
-
-footer div{
-	margin-left: 0px;
-}
-
-#quiz_links-section #quiz_links-ctn{
-	display: grid;
-	grid-template-columns: auto auto;
-	margin-top: 40px;
-}
-
-#learn-main dl dt{
-	margin-top: 40px;
-	margin-bottom: 10px;
-}
-
-#learn-main a{
-	margin-top: 70px;
-}
-
-#explore-main #modal-cnt{
-	display: none;
-	width: 80%;
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 100;
-}
-
-#explore-main #modal-cnt #modal-img{
-	width: 100%;
-	height: auto;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
-}
-
-#explore-main .gallery-section{
-	display: flex;
-	flex-direction: column;
-}
-
-#explore-main .gallery-section .gallery-column{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 90%;
-}
-
-#contact_us-main .contact_us-form{
-	width: 100%;
-}
-
-#contact_us-main .contact_us-form button{
-	width: 50%;
-}
-
-.quiz-section img{
-	max-width: 100%;
-	max-height: 600px;
-}
-
-}
