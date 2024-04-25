@@ -505,7 +505,7 @@ footer div{
 
 /* TABLET VIEW */
 
-@media only screen and (min-width:451px) and (max-width:769px){
+@media only screen and (min-width:451px) and (max-width:850px){
 
 nav{
 	display: flex;
