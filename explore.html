@@ -18,12 +18,14 @@
 	<header class="artistly-header">
 		<nav class="artistly-nav">
 			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt="Artistly Logo"></a>
-			<div class="nav-ctn">
+			<div id="nav-ctn" class="nav-inactive">
 				<a href="index.html" class="nav-links">Home</a>
 				<a href="learn.html" class="nav-links">Learn</a>
 				<a href="explore.html" class="nav-links active">Explore</a>
 				<a href="contact_us.html" class="nav-links">Contact Us</a>
 			</div>
+			<button id="nav-open-btn" class="btn-active" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+			<button id="nav-close-btn" class="btn-inactive" onclick="closeNav()"><i class="fa-solid fa-x"></i></button>
 		</nav>
 		<img src="imgs/banner.jpg" class="artistly-banner" alt="Banner of Artistly Website">
 	</header>
@@ -43,25 +45,25 @@
 		<!-- Gallery Section -->
 		<section class="gallery-section">
 			<div class="gallery-column">
-				<img src="imgs\gallery_photo-1.jpg" alt="Woman carrying vase walking down the stairs of a block building." onclick="openModal('imgs/gallery_photo-1.jpg')">
+				<img src="imgs\gallery_photo-1.jpg" alt="A tree representing St.Lucia, growing and digging a root deep into what feeds her, her virtues" onclick="openModal('imgs/gallery_photo-1.jpg')">
 				<img src="imgs\gallery_photo-2.jpeg" alt="Old man in semi-lit room with a vibrant red cloth draped around this body. Resting on a table, with subjects positioned in the ccenter of the piece" onclick="openModal('imgs/gallery_photo-2.jpeg')">
-				<img src="imgs\gallery_photo-3.jpeg" alt="Tree with blue trunk and leaves, and orange roots. Foreground has a background with inversed colors to the foreground" onclick="openModal('imgs/gallery_photo-3.jpeg')">
+				<img src="imgs\gallery_photo-3.jpg" alt="Woman carrying vase walking down the stairs of a block building." onclick="openModal('imgs/gallery_photo-3.jpg')">
 				<img src="imgs\gallery_photo-4.jpg" alt="Ships in the water" onclick="openModal('imgs/gallery_photo-4.jpg')">
-				<img src="imgs\gallery_photo-5.jpg" alt="" onclick="openModal('imgs/gallery_photo-5.jpg')">
+				<img src="imgs\gallery_photo-5.jpg" alt="Blue and orange flat brush strokes" onclick="openModal('imgs/gallery_photo-5.jpg')">
 			</div>
 			<div class="gallery-column">
-				<img src="imgs\gallery_photo-6.jpg" alt="" onclick="openModal('imgs/gallery_photo-6.jpg')">
-				<img src="imgs\gallery_photo-7.jpg" alt="" onclick="openModal('imgs/gallery_photo-7.jpg')">
-				<img src="imgs\gallery_photo-8.jpg" alt="" onclick="openModal('imgs/gallery_photo-8.jpg')">
-				<img src="imgs\gallery_photo-9.jpg" alt="" onclick="openModal('imgs/gallery_photo-9.jpg')">
-				<img src="imgs\gallery_photo-10.jpg" alt="" onclick="openModal('imgs/gallery_photo-10.jpg')">
+				<img src="imgs\gallery_photo-6.jpg" alt="Mountains painted to the outer edges of the piece with a lake and the sky centered" onclick="openModal('imgs/gallery_photo-6.jpg')">
+				<img src="imgs\gallery_photo-7.jpg" alt="Three birds perched on some branches; the blacks and white of their feathers contrastong with the background" onclick="openModal('imgs/gallery_photo-7.jpg')">
+				<img src="imgs\gallery_photo-8.jpg" alt="Cattle feeding and resting by a river that people are drawing water from" onclick="openModal('imgs/gallery_photo-8.jpg')">
+				<img src="imgs\gallery_photo-9.jpg" alt="Two fox contrasting against the a white background" onclick="openModal('imgs/gallery_photo-9.jpg')">
+				<img src="imgs\gallery_photo-10.jpg" alt="A crowd standing and sitting in a temple, their size and color providing enough contrast given the tone of the painting" onclick="openModal('imgs/gallery_photo-10.jpg')">
 			</div>
 			<div class="gallery-column">
-				<img src="imgs\gallery_photo-11.jpg" alt="" onclick="openModal('imgs/gallery_photo-11.jpg')">
-				<img src="imgs\gallery_photo-12.jpg" alt="" onclick="openModal('imgs/gallery_photo-12.jpg')">
-				<img src="imgs\gallery_photo-13.jpeg" alt="" onclick="openModal('imgs/gallery_photo-13.jpeg')">
-				<img src="imgs\gallery_photo-14.jpg" alt="" onclick="openModal('imgs/gallery_photo-14.jpg')">
-				<img src="imgs\gallery_photo-15.jpg" alt="" onclick="openModal('imgs/gallery_photo-15.jpg')">
+				<img src="imgs\gallery_photo-11.jpg" alt="Watercolor circles placed rhythmically on the canvas in different colors" onclick="openModal('imgs/gallery_photo-11.jpg')">
+				<img src="imgs\gallery_photo-12.jpg" alt="Water pouring from pockets, moving one eyes from one part of the piece to another" onclick="openModal('imgs/gallery_photo-12.jpg')">
+				<img src="imgs\gallery_photo-13.jpeg" alt="Three individuals with the olives skins and red curtain creating contrast against the dark room" onclick="openModal('imgs/gallery_photo-13.jpeg')">
+				<img src="imgs\gallery_photo-14.jpg" alt="Landscape of people making a living in a snowy terrain" onclick="openModal('imgs/gallery_photo-14.jpg')">
+				<img src="imgs\gallery_photo-15.jpg" alt="A piece with a river cutting between snowy terrain patched with trees beautifully contrast the colors of the climate around them" onclick="openModal('imgs/gallery_photo-15.jpg')">
 			</div>
 		</section>
 		<!-- End of Gallery Section -->
@@ -84,8 +86,10 @@
 		</div>
 	</footer>
 	<!-- End of Footer -->
+	<!-- Modal script inclusion -->
+	<script type="text/javascript" src="modal.js"></script>
+	<!-- Navbar script inclusion -->
+	<script type="text/javascript" src="menu.js"></script>
 </body>
 
-<!-- Modal script inclusion -->
-<script type="text/javascript" src="modal.js"></script>
 </html>

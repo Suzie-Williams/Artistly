@@ -17,22 +17,24 @@
 	<!-- Header -->
 	<header class="artistly-header">
 		<nav class="artistly-nav">
-			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt=""></a>
-			<div class="nav-ctn">
+			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt="Artistly Logo"></a>
+			<div id="nav-ctn" class="nav-inactive">
 				<a href="index.html" class="nav-links">Home</a>
 				<a href="learn.html" class="nav-links">Learn</a>
 				<a href="explore.html" class="nav-links">Explore</a>
 				<a href="contact_us.html" class="nav-links">Contact Us</a>
 			</div>
+			<button id="nav-open-btn" class="btn-active" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+			<button id="nav-close-btn" class="btn-inactive" onclick="closeNav()"><i class="fa-solid fa-x"></i></button>
 		</nav>
-		<img src="imgs/banner.jpg" class="artistly-banner">
+		<img src="imgs/banner.jpg" class="artistly-banner" alt="Banner of Artistly Website">
 	</header>
 	<!-- End of Header -->
 	<!-- Main Section -->
 	<main id="quiz-main">
 		<section class="quiz-section">
 			<h2 class="quiz-question">1. Does this picture make use of movement techniques?</h2>
-			<img src="imgs/movement-q1.jpg" alt="">
+			<img src="imgs/movement-q1.jpg" alt="A girl standing in grass, with a pond infront and the mass of mountains stretching wide, cloud masking behind them in the open sky">
 
 			<label for="q1-option1"><input type="radio" name="question1" id="q1-option1" class="quiz-options correct">
 			Yes</label>
@@ -47,10 +49,10 @@
 			<h2 class="quiz-question">2. Which one of these images causes less movement of attention?</h2>
 
 			<label for="q2-option1"><input type="radio" name="question2" id="q2-option1" class="quiz-options correct">
-			<img src="imgs/movement-q2-opt1.jpg" alt=""></label>
+			<img src="imgs/movement-q2-opt1.jpg" alt="A picture of a lady, drawn over with lines and patterns, against a pink background with scribbly lines drawn in all four directions"></label>
 
 			<label for="q2-option2"><input type="radio" name="question2" id="q2-option2" class="quiz-options">
-			<img src="imgs/movement-q2-opt2.jpg" alt=""></label>
+			<img src="imgs/movement-q2-opt2.jpg" alt="A boy standing on a peak of a mountain reaching the top of the clouds facing an enormous dragon, which is perched between multiple mountain peaks. With petals floating around in the open sky"></label>
 
 			<button class="next-btn action-btn regsize-btn">Next</button>
 		</section>
@@ -83,5 +85,7 @@
 	<!-- End of Footer -->
 	<!-- Quiz script inclusion -->
 	<script type="text/javascript" src="quiz.js"></script>
+	<!-- Navbar script inclusion -->
+	<script type="text/javascript" src="menu.js"></script>
 </body>
 </html>

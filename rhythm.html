@@ -17,15 +17,17 @@
 	<!-- Header -->
 	<header class="artistly-header">
 		<nav class="artistly-nav">
-			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt=""></a>
-			<div class="nav-ctn">
+			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt="Artistly Logo"></a>
+			<div id="nav-ctn" class="nav-inactive">
 				<a href="index.html" class="nav-links">Home</a>
 				<a href="learn.html" class="nav-links">Learn</a>
 				<a href="explore.html" class="nav-links">Explore</a>
 				<a href="contact_us.html" class="nav-links">Contact Us</a>
 			</div>
+			<button id="nav-open-btn" class="btn-active" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+			<button id="nav-close-btn" class="btn-inactive" onclick="closeNav()"><i class="fa-solid fa-x"></i></button>
 		</nav>
-		<img src="imgs/banner.jpg" class="artistly-banner">
+		<img src="imgs/banner.jpg" class="artistly-banner" alt="Banner of Artistly Website">
 	</header>
 	<!-- End of Header -->
 	<!-- Main Section -->
@@ -34,10 +36,10 @@
 			<h2 class="quiz-question">1. Which of these best express the principle, rhythm?</h2>
 
 			<label for="q1-option1"><input type="radio" name="question1" id="q1-option1" class="quiz-options correct">
-			<img src="imgs/rhythm-q1-opt1.jpg" alt=""></label>
+			<img src="imgs/rhythm-q1-opt1.jpg" alt="A car in the desert with flowers nicely placed to the sides of it and with matching stickers of flowers flowing on its body"></label>
 
 			<label for="q1-option2"><input type="radio" name="question1" id="q1-option2" class="quiz-options">
-			<img src="imgs/rhythm-q1-opt2.jpg" alt=""></label>
+			<img src="imgs/rhythm-q1-opt2.jpg" alt="A brown checkered symmetrical pattern"></label>
 
 			<button class="next-btn action-btn regsize-btn">Next</button>
 		</section>
@@ -46,10 +48,10 @@
 			<h2 class="quiz-question">2. Which of these best express the principle, rhythm?</h2>
 
 			<label for="q2-option1"><input type="radio" name="question1" id="q2-option1" class="quiz-options correct">
-			<img src="imgs/rhythm-q2-opt1.jpg" alt=""></label>
+			<img src="imgs/rhythm-q2-opt1.jpg" alt="Oblonged circle like shapes neatly placed in harmonious colors that complements each other"></label>
 
 			<label for="q2-option2"><input type="radio" name="question1" id="q2-option2" class="quiz-options">
-			<img src="imgs/rhythm-q2-opt2.jpg" alt=""></label>
+			<img src="imgs/rhythm-q2-opt2.jpg" alt="A monotonous piece with a lady and a cat painted in grayish colors. The cat has gold circles scattered on its body"></label>
 
 			<button class="next-btn action-btn regsize-btn">Next</button>
 		</section>
@@ -82,5 +84,7 @@
 	<!-- End of Footer -->
 	<!-- Quiz script inclusion -->
 	<script type="text/javascript" src="quiz.js"></script>
+	<!-- Navbar script inclusion -->
+	<script type="text/javascript" src="menu.js"></script>
 </body>
 </html>

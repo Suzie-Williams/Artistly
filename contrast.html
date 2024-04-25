@@ -17,15 +17,17 @@
 	<!-- Header -->
 	<header class="artistly-header">
 		<nav class="artistly-nav">
-			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt=""></a>
-			<div class="nav-ctn">
+			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt="Artistly Logo"></a>
+			<div id="nav-ctn" class="nav-inactive">
 				<a href="index.html" class="nav-links">Home</a>
 				<a href="learn.html" class="nav-links">Learn</a>
 				<a href="explore.html" class="nav-links">Explore</a>
 				<a href="contact_us.html" class="nav-links">Contact Us</a>
 			</div>
+			<button id="nav-open-btn" class="btn-active" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+			<button id="nav-close-btn" class="btn-inactive" onclick="closeNav()"><i class="fa-solid fa-x"></i></button>
 		</nav>
-		<img src="imgs/banner.jpg" class="artistly-banner">
+		<img src="imgs/banner.jpg" class="artistly-banner" alt="Banner of Artistly Website">
 	</header>
 	<!-- End of Header -->
 	<!-- Main Section -->
@@ -33,17 +35,17 @@
 		<section class="quiz-section">
 			<h2 class="quiz-question">1. Which of the following makes the best use of contrast?</h2>
 			<label for="q1-option1"><input type="radio" name="question1" id="q1-option1" class="quiz-options correct">
-			<img src="imgs/contrast-q1-opt1.jpg" alt=""></label>
+			<img src="imgs/contrast-q1-opt1.jpg" alt="Huge , vibrant, blue, purple and orange jelly-fish models illuminating a dark room casting silhouettes in the people staring"></label>
 
 			<label for="q1-option2"><input type="radio" name="question1" id="q1-option2" class="quiz-options">
-			<img src="imgs/contrast-q1-opt2.jpeg" alt=""></label>
+			<img src="imgs/contrast-q1-opt2.jpeg" alt="A piece of a lady staring out a window, painted in blurry strokes pale pastel skin tone and mustard color clothes and surroundings"></label>
 
 			<button class="next-btn action-btn regsize-btn">Next</button>
 		</section>
 
 		<section class="quiz-section">
 			<h2 class="quiz-question">2. What mainly contributes to the contrast of this piece?</h2>
-			<img src="imgs/contrast-q2.jpg" alt="">
+			<img src="imgs/contrast-q2.jpg" alt="A piece of a small orange boat floating with a green and blue watercolor background depicting the sky. Below, in the sea textured, is a large blue whale with a white pattern on its body.">
 
 			<label for="q2-option1"><input type="radio" name="question2" id="q2-option1" class="quiz-options">
 			Size and movement</label>
@@ -88,5 +90,7 @@
 	<!-- End of Footer -->
 	<!-- Quiz script inclusion -->
 	<script type="text/javascript" src="quiz.js"></script>
+	<!-- Navbar script inclusion -->
+	<script type="text/javascript" src="menu.js"></script>
 </body>
 </html>

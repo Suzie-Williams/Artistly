@@ -17,22 +17,24 @@
 	<!-- Header -->
 	<header class="artistly-header">
 		<nav class="artistly-nav">
-			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt=""></a>
-			<div class="nav-ctn">
+			<a href="index.html" class="artistly-logo"><img src="imgs/logo.png" alt="Artistly Logo"></a>
+			<div id="nav-ctn" class="nav-inactive">
 				<a href="index.html" class="nav-links">Home</a>
 				<a href="learn.html" class="nav-links">Learn</a>
 				<a href="explore.html" class="nav-links">Explore</a>
 				<a href="contact_us.html" class="nav-links">Contact Us</a>
 			</div>
+			<button id="nav-open-btn" class="btn-active" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+			<button id="nav-close-btn" class="btn-inactive" onclick="closeNav()"><i class="fa-solid fa-x"></i></button>
 		</nav>
-		<img src="imgs/banner.jpg" class="artistly-banner">
+		<img src="imgs/banner.jpg" class="artistly-banner" alt="Banner of Artistly Website">
 	</header>
 	<!-- End of Header -->
 	<!-- Main Section -->
 	<main id="quiz-main">
 		<section class="quiz-section">
 			<h2 class="quiz-question">1. This piece is too:</h2>
-			<img src="imgs/variety-q1.jpg" alt="">
+			<img src="imgs/variety-q1.jpg" alt="A busy city, with people dressed in various colors of clothing carrying umbrellas to match. Buildings to either side of the road has various signs of different vibrant colors casting reflections of their glow on the ground.">
 
 			<label for="q1-option1"><input type="radio" name="question1" id="q1-option1" class="quiz-options correct">
 			Chaotic</label>
@@ -45,7 +47,7 @@
 
 		<section class="quiz-section">
 			<h2 class="quiz-question">2. Which of the following will not balance out the unity and variety in this piece?</h2>
-			<img src="imgs/variety-q2.png" alt="">
+			<img src="imgs/variety-q2.png" alt="A drawing of a turtle with more than 12 different colors, amd filled with multiple shapes and patterns">
 
 			<label for="q2-option1"><input type="radio" name="question2" id="q2-option1" class="quiz-options">
 			Less elements</label>
@@ -89,5 +91,7 @@
 	<!-- End of Footer -->
 	<!-- Quiz script inclusion -->
 	<script type="text/javascript" src="quiz.js"></script>
+	<!-- Navbar script inclusion -->
+	<script type="text/javascript" src="menu.js"></script>
 </body>
 </html>

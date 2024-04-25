@@ -452,7 +452,7 @@ footer div{
 
 #explore-main #modal-cnt{
 	display: none;
-	width: 90%;
+	width: 80%;
 	position: fixed;
 	left: 50%;
 	top: 50%;
@@ -461,8 +461,8 @@ footer div{
 }
 
 #explore-main #modal-cnt #modal-img{
-	width: 100%;
-	height: auto;
+	max-width: 100%;
+	max-height: 50%;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
 }
 
@@ -582,14 +582,14 @@ footer div{
 	width: 80%;
 	position: fixed;
 	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+	top: 20%;
+	transform: translate(-50%, -20%);
 	z-index: 100;
 }
 
 #explore-main #modal-cnt #modal-img{
-	width: 100%;
-	height: auto;
+	max-width: 100%;
+	max-height: 80%;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
 }
 
